@@ -3,7 +3,11 @@ from prettytable import PrettyTable
 ListStudent=[]
 ListCourse= []
 
-class Student:
+class School():
+    def school(self):
+        pass
+
+class Student(School):
     def __init__(self, StudentID, StudentName, StudentDOB):
         self._StudentID= StudentID
         self._StudentName = StudentName
@@ -18,7 +22,7 @@ class Student:
     def get_studentDOB(self):
         return self._StudentDOB
     
-class Course:
+class Course(School):
     def __init__(self,courseID, courseName):
         self.courseID = courseID
         self.courseName = courseName
